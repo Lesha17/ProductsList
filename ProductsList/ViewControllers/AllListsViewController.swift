@@ -90,6 +90,20 @@ extension AllListsViewController {
 
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            let allLists = productListsProvider.getProductLists();
+            let completed : Bool = (indexPath.section == AllListsViewController.DONE_SECTION)
+            let lists = getLists(completed: completed)
+            let list = lists[indexPath.row]
+            let index = allLists.index(of: list)
+            
+            productListsProvider.removeProductList(at: index!);
+            
+            tableView.reloadData()
+        }
+    }
+    
     func getLists(completed : Bool) -> [ProductList] {
         var result : [ProductList] = [];
         
@@ -119,5 +133,24 @@ extension AllListsViewController {
     
     @IBAction func backFromViewListToAllLists(_ segue : UIStoryboardSegue) {
         
+    }
+}
+
+extension AllListsViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ViewProductList" {
+            if let navigationController = segue.destination as? UINavigationController {
+                if let viewListController = navigationController.topViewController as? ViewListViewController {
+                    if let cell = sender as? UITableViewCell {
+                        if let indexPath = tableView.indexPath(for: cell) {
+                            let completed : Bool = (indexPath.section == AllListsViewController.DONE_SECTION)
+                            let lists = getLists(completed: completed)
+                            let list = lists[indexPath.row]
+                            viewListController.productListName = list.name
+                        }
+                    }
+                }
+            }
+        }
     }
 }

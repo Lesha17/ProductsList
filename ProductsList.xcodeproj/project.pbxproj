@@ -18,6 +18,11 @@
 		E8F61D55206E949C00610049 /* CreateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F61D54206E949C00610049 /* CreateListViewController.swift */; };
 		E8F61D57206E958A00610049 /* ProductListsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F61D56206E958A00610049 /* ProductListsProvider.swift */; };
 		E8F61D59206E95BE00610049 /* OfflineProductListsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F61D58206E95BE00610049 /* OfflineProductListsProvider.swift */; };
+		E8F61D5B206EB41F00610049 /* ViewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F61D5A206EB41F00610049 /* ViewListViewController.swift */; };
+		E8F61D5D206EB54600610049 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F61D5C206EB54600610049 /* Product.swift */; };
+		E8F61D5F206EB55400610049 /* ProductsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F61D5E206EB55400610049 /* ProductsProvider.swift */; };
+		E8F61D61206EB56A00610049 /* OfflineProductsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F61D60206EB56A00610049 /* OfflineProductsProvider.swift */; };
+		E8F61D63206EBB1900610049 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F61D62206EBB1900610049 /* AddProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		E8F61D54206E949C00610049 /* CreateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateListViewController.swift; sourceTree = "<group>"; };
 		E8F61D56206E958A00610049 /* ProductListsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListsProvider.swift; sourceTree = "<group>"; };
 		E8F61D58206E95BE00610049 /* OfflineProductListsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineProductListsProvider.swift; sourceTree = "<group>"; };
+		E8F61D5A206EB41F00610049 /* ViewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewListViewController.swift; sourceTree = "<group>"; };
+		E8F61D5C206EB54600610049 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		E8F61D5E206EB55400610049 /* ProductsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsProvider.swift; sourceTree = "<group>"; };
+		E8F61D60206EB56A00610049 /* OfflineProductsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineProductsProvider.swift; sourceTree = "<group>"; };
+		E8F61D62206EBB1900610049 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,8 @@
 			children = (
 				E8F61D4F206E8E8E00610049 /* AllListsViewController.swift */,
 				E8F61D54206E949C00610049 /* CreateListViewController.swift */,
+				E8F61D5A206EB41F00610049 /* ViewListViewController.swift */,
+				E8F61D62206EBB1900610049 /* AddProductViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -94,6 +106,9 @@
 				E8F61D52206E93E500610049 /* ProductList.swift */,
 				E8F61D56206E958A00610049 /* ProductListsProvider.swift */,
 				E8F61D58206E95BE00610049 /* OfflineProductListsProvider.swift */,
+				E8F61D5C206EB54600610049 /* Product.swift */,
+				E8F61D5E206EB55400610049 /* ProductsProvider.swift */,
+				E8F61D60206EB56A00610049 /* OfflineProductsProvider.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,14 +185,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F61D5F206EB55400610049 /* ProductsProvider.swift in Sources */,
 				E8F61D57206E958A00610049 /* ProductListsProvider.swift in Sources */,
+				E8F61D61206EB56A00610049 /* OfflineProductsProvider.swift in Sources */,
 				E8F61D55206E949C00610049 /* CreateListViewController.swift in Sources */,
 				E8F61D3C206E8E1C00610049 /* ViewController.swift in Sources */,
 				E8F61D3A206E8E1C00610049 /* AppDelegate.swift in Sources */,
 				E8F61D53206E93E500610049 /* ProductList.swift in Sources */,
 				E8F61D50206E8E8E00610049 /* AllListsViewController.swift in Sources */,
 				E8F61D59206E95BE00610049 /* OfflineProductListsProvider.swift in Sources */,
+				E8F61D63206EBB1900610049 /* AddProductViewController.swift in Sources */,
+				E8F61D5D206EB54600610049 /* Product.swift in Sources */,
 				E8F61D42206E8E1C00610049 /* ProductsList.xcdatamodeld in Sources */,
+				E8F61D5B206EB41F00610049 /* ViewListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
