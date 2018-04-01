@@ -46,7 +46,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="All lists" id="txs-WT-5gg">
-                        <barButtonItem key="leftBarButtonItem" title="Settings" id="Eg7-tn-b2a"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ccJ-WO-Y14">
                             <connections>
                                 <segue destination="wBv-eo-taY" kind="presentation" id="Wgb-6C-yAw"/>
@@ -179,7 +178,7 @@
                             <outlet property="delegate" destination="PsH-8f-F0t" id="URZ-QW-EdG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qnG-d3-YWn">
+                    <navigationItem key="navigationItem" title="Add new product list" id="qnG-d3-YWn">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="HiC-EZ-6E9">
                             <connections>
                                 <segue destination="WcR-sa-dpk" kind="unwind" unwindAction="cancelCreateListToAllLists:" id="hzb-gs-ZFW"/>
